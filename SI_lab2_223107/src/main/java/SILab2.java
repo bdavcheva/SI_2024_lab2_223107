@@ -55,7 +55,7 @@ public class SILab2 {
 
         float sum = 0; //3
 
-        for (int i = 0; i < allItems.size(); i++){ //4.1 4.2 4.3
+        for (int i = 0; i < allItems.size(); i++){ //4.1, 4.2, 4.3
             Item item = allItems.get(i);  //5
             if (item.getName() == null || item.getName().length() == 0){  //6
                 item.setName("unknown");  //7
@@ -63,7 +63,7 @@ public class SILab2 {
             if (item.getBarcode() != null){  //8
                 String allowed = "0123456789";   //9
                 char chars[] = item.getBarcode().toCharArray();
-                for (int j = 0; j < item.getBarcode().length(); j++){  //10.1 10.2 10.3
+                for (int j = 0; j < item.getBarcode().length(); j++){  //10.1, 10.2, 10.3
                     char c = item.getBarcode().charAt(j);  //11
                     if (allowed.indexOf(c) == -1){  //12
                         throw new RuntimeException("Invalid character in item barcode!");  //13
